@@ -5,7 +5,7 @@ const LetTry: React.FC = () => {
     <div className="h-screen w-screen">
       <div className="grid grid-cols-2 grid-rows-1 gap-4">
         <div className="flex justify-center items-center">
-          <div className="bg-white w-[30vw] h-[50vh]"></div>
+          <div className="bg-white w-[40vw] h-[50vh]"></div>
         </div>
         <div className="flex justify-center items-center">
           <div className="flex-col">

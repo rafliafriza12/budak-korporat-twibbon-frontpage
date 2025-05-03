@@ -7,7 +7,7 @@ const TopCreator: React.FC = () => {
       <div className="h-screen w-screen">
         <div className="flex justify-center items-center flex-col">
           <h1 className="font-bold text-[4rem]">Top Creator</h1>
-          <div className="grid grid-cols-3 grid-rows-1 gap-[4rem] mt-10 ">
+          <div className="grid grid-cols-3 grid-rows-1 gap-[20rem] mt-10 ">
             {cardConfigData.map((item, key) => (
               <CardComponentTopCreator key={key} data={item} />
             ))}

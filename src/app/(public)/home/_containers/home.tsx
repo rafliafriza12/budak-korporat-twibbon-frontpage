@@ -6,6 +6,7 @@ import HeroSection from '@/core/sections/hero-section';
 import CollectionsSection from '@/core/sections/collection-section';
 import TopCreator from '@/components/section/top-creator/TopCreator';
 import LetTry from '@/components/section/let’t try/Let-Try';
+import Mail from '@/components/section/mail/mail';
 
 export default function ContainerHome() {
   const { theme } = useTheme();
@@ -18,6 +19,7 @@ export default function ContainerHome() {
         <div className="flex flex-col items-center justify-center h-full">
           <TopCreator />
           <LetTry />
+          <Mail />
         </div>
       </main>
     </NavLayout>
