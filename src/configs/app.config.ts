@@ -87,10 +87,10 @@ export const navigationMenuConfig: NavigationMenuConfig = {
       href: '/',
       description: 'Home',
     },
-    {
-      title: 'Kelas',
-      href: '/kelas',
-      description: 'Kelas',
-    },
+    // {
+    //   title: 'Kelas',
+    //   href: '/kelas',
+    //   description: 'Kelas',
+    // },
   ],
 };

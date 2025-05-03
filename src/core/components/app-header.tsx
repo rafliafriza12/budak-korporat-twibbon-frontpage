@@ -63,8 +63,8 @@ export default function AppHeader() {
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <LanguageDropdown />
-          <NotificationDropdown />
-          <UserDropdown />
+          {/* <NotificationDropdown />
+          <UserDropdown /> */}
         </div>
       </div>
     </nav>
