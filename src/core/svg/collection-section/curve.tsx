@@ -49,7 +49,7 @@ const GlowingNeonLines: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center w-full h-full bg-black">
+    <div className="flex justify-center items-center w-full h-full bg-transparent">
       <svg
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
