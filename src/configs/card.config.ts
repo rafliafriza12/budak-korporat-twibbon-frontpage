@@ -22,6 +22,36 @@ export const cardConfigData: CardConfig[] = [
     desc: '623 Product Item',
     image: '',
   },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
+  {
+    username: 'Username',
+    desc: '623 Product Item',
+    image: '',
+  },
 ];
 
 export interface CardConfigProps {
