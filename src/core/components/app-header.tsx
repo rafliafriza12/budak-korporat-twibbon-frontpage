@@ -63,7 +63,7 @@ export default function AppHeader() {
         </div>
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <LanguageDropdown />
           {/* <NotificationDropdown />
           <UserDropdown /> */}
