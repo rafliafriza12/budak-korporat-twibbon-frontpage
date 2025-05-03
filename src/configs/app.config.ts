@@ -1,6 +1,9 @@
 import React from 'react';
 
 interface AppConfig {
+  name: string;
+  description: string;
+  logo: string;
   items: {
     addres: string;
     email: string;
@@ -21,6 +24,9 @@ interface AppConfig {
 }
 
 export const appConfig: AppConfig = {
+  name: 'Bodak Korporat',
+  description: 'Build your Twibbon with Budak Korporat',
+  logo: '/images/logo.png',
   items: [
     {
       addres: 'Number 3891 Jhosep Marlong, Lambhuk ujong 62639, Indonesia Country',

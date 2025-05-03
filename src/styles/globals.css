@@ -109,6 +109,10 @@
   --sidebar-ring: rgba(145, 29, 236, 0.3);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .dark {
   --background: #000000;
   --foreground: #f5eaff;
