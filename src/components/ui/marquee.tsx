@@ -12,7 +12,7 @@ interface MarqueeElementCollectionProps {
 
 export const MarqueeElementText: React.FC<MarqueeElementTextProps> = ({ text }) => {
   return (
-    <Marquee direction="right" className=" flex">
+    <Marquee direction="right" className=" flex overflow-hidden">
       {[1, 2, 3, 4, 5, 6, 7].map((data: number, index: number) => {
         return (
           <h1 key={index} className="text-black font-semibold text-5xl mr-10">
