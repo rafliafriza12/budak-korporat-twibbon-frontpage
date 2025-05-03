@@ -2,8 +2,8 @@ import LaserSVG from '@/core/svg/mail-section/laser';
 const Mail: React.FC = () => {
   return (
     <div className="w-screen h-screen">
-      <div className="flex justify-center items-center">
-        <div className="bg-[#DAC402] h-[50vh] w-[80vw] relative justify-center flex items-center">
+      <div className="flex justify-center items-center w-screen px-[10vw]">
+        <div className="bg-[#DAC402] h-[50vh] w-full relative justify-center flex items-center">
           <div className="absolute  bg-[#FF0000] h-[30vh] w-[50vw] rounded-lg  blur-[6rem] z-1"></div>
           <div className="translate-x-[15vw] translate-y-[-7vh] absolute">
             <LaserSVG />
