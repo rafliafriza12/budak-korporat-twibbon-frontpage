@@ -5,6 +5,7 @@ import { MarqueeElementText, MarqueeElementCollection } from '@/components/ui/ma
 import CardCollection from '@/components/ui/card-collection';
 import Link from 'next/link';
 import Letter from '../svg/collection-section/letter';
+import GlowingNeonLines from '../svg/collection-section/curve';
 
 const datas: any[] = [
   {
@@ -53,7 +54,7 @@ const CollectionsSection: React.FC = () => {
         <MarqueeElementCollection datas={datas} />
       </div>
 
-      <h1 className=" text-[9rem] font-bold text-center max-w-[1500px]">
+      <h1 className=" text-[9rem] font-bold text-center max-w-[1500px] mt-36">
         FIND AND COLLECT POPULAR STYLE
       </h1>
 
@@ -61,7 +62,7 @@ const CollectionsSection: React.FC = () => {
         <MarqueeElementText text="SELECT YOUR FAVORITE TWIBBON" />
       </div>
 
-      <div className=" w-screen px-[10vw] grid grid-cols-3 mt-20">
+      <div className=" w-screen px-[10vw] grid grid-cols-3 mt-20 relative z-0 ">
         <div className=" w-full flex flex-col justify-center items-start gap-5">
           <h1 className=" text-5xl font-semibold max-w-[400px] leading-14 text-left">
             Discovery Twibbon From Each of Our Creators
@@ -77,6 +78,9 @@ const CollectionsSection: React.FC = () => {
           </Link>
         </div>
         <div className=" w-full flex justify-start items-end relative z-0 group">
+          <div className="w-full rotate-x-[180deg] absolute z-[-5] scale-[2] top-[130px]">
+            <GlowingNeonLines />
+          </div>
           <div className="">
             <Letter />
           </div>
