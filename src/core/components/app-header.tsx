@@ -40,12 +40,14 @@ export default function AppHeader() {
         isScrolled ? 'border-b-border shadow-md' : 'border-b-transparent'
       )}
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <div className="flex items-center gap-4">
-          {/* Company Logo */}
+      <div className="flex items-center justify-around max-w-7xl mx-auto">
+        <div>
           <Link href="/">
             <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
           </Link>
+        </div>
+        <div className="flex items-center gap-4">
+          {/* Company Logo */}
 
           <NavigationMenu>
             <NavigationMenuList>
@@ -61,10 +63,10 @@ export default function AppHeader() {
         </div>
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <LanguageDropdown />
-          <NotificationDropdown />
-          <UserDropdown />
+          {/* <NotificationDropdown />
+          <UserDropdown /> */}
         </div>
       </div>
     </nav>
