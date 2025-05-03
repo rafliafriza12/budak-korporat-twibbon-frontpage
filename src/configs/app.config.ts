@@ -4,70 +4,96 @@ interface AppConfig {
   name: string;
   description: string;
   logo: string;
-  metadata: {
+  items: {
+    addres: string;
+    email: string;
+    phone: string;
+  }[];
+  company: {
     title: string;
-    description: string;
-    keywords: string[];
-    author: string;
-    image: string;
-  };
-  social_media: {
-    twitter: {
-      url: string;
-      icon: string;
-    };
-    instagram: {
-      url: string;
-      icon: string;
-    };
-    linkedin: {
-      url: string;
-      icon: string;
-    };
-    youtube: {
-      url: string;
-      icon: string;
-    };
-    tiktok: {
-      url: string;
-      icon: string;
-    };
-  };
+    href: string;
+  }[];
+  resource: {
+    title: string;
+    href: string;
+  }[];
+  sosial: {
+    title: string;
+    href: string;
+  }[];
 }
 
 export const appConfig: AppConfig = {
-  name: 'App',
-  description: 'App',
+  name: 'Bodak Korporat',
+  description: 'Build your Twibbon with Budak Korporat',
   logo: '/images/logo.png',
-  metadata: {
-    title: 'App',
-    description: 'App',
-    keywords: ['App'],
-    author: 'App',
-    image: 'App',
-  },
-  social_media: {
-    twitter: {
-      url: 'https://twitter.com/app',
-      icon: 'hugeicons:new-twitter-rectangle',
+  items: [
+    {
+      addres: 'Number 3891 Jhosep Marlong, Lambhuk ujong 62639, Indonesia Country',
+      email: 'budakkorprat@gmail.com',
+      phone: '08123456789',
     },
-    instagram: {
-      url: 'https://instagram.com/app',
-      icon: 'basil:instagram-outline',
+  ],
+  company: [
+    {
+      title: 'collection',
+      href: '/',
     },
-    linkedin: {
-      url: 'https://linkedin.com/app',
-      icon: 'tabler:brand-linkedin',
+    {
+      title: 'comunity',
+      href: '/',
     },
-    youtube: {
-      url: 'https://youtube.com/app',
-      icon: 'mingcute:youtube-line',
+    {
+      title: 'contact',
+      href: '/',
     },
-    tiktok: {
-      url: 'https://tiktok.com/app',
-      icon: 'hugeicons:tiktok',
+    {
+      title: 'about',
+      href: '/',
     },
-  },
+  ],
+
+  resource: [
+    {
+      title: 'help center',
+      href: '/',
+    },
+    {
+      title: 'platfrom status',
+      href: '/',
+    },
+    {
+      title: 'partners',
+      href: '/',
+    },
+    {
+      title: 'blog',
+      href: '/',
+    },
+  ],
+
+  sosial: [
+    {
+      title: 'instagram',
+      href: '/',
+    },
+    {
+      title: 'bribble',
+      href: '/',
+    },
+    {
+      title: 'behance',
+      href: '/',
+    },
+    {
+      title: 'facebook',
+      href: '/',
+    },
+    {
+      title: 'twitter',
+      href: '/',
+    },
+  ],
 };
 
 interface NavigationMenuConfig {
@@ -83,14 +109,29 @@ interface NavigationMenuConfig {
 export const navigationMenuConfig: NavigationMenuConfig = {
   items: [
     {
-      title: 'Home',
+      title: 'COLLECTIONS',
       href: '/',
       description: 'Home',
     },
-    // {
-    //   title: 'Kelas',
-    //   href: '/kelas',
-    //   description: 'Kelas',
-    // },
+    {
+      title: 'SHOP',
+      href: '/',
+      description: 'Shop',
+    },
+    {
+      title: 'COMMUNITY',
+      href: '/',
+      description: 'Community',
+    },
+    {
+      title: 'ABOUT',
+      href: '/',
+      description: 'About',
+    },
+    {
+      title: 'CONTACT',
+      href: '/',
+      description: 'contact',
+    },
   ],
 };
