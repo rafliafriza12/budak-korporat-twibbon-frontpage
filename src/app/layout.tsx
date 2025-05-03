@@ -8,7 +8,7 @@ export { metadata };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={siteConfig.locale} suppressHydrationWarning>
-      <body>
+      <body className="scrollbar-thumb-rounded-full scrollbar-thin scrollbar-thumb-[#FF0000] scrollbar-track-[#000000]">
         <ThemeProvider>
           <Providers>{children}</Providers>
         </ThemeProvider>
