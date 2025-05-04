@@ -24,8 +24,11 @@ const CardCollection: React.FC<CardCollectionProps> = ({ width, height, imgURL, 
     >
       <Image src={testImage} alt="Testing" className="object-cover w-full h-full absolute z-[-1]" />
       {isHovered && (
-        <Link href={href} className=" flex items-center px-7 py-3 bg-[#FF0000] gap-2">
-          <span className=" font-bold text-black">TRY NOW</span>
+        <Link
+          href={href}
+          className=" flex items-center py-2 px-5 lg:px-7 lg:py-3 bg-[#FF0000] gap-2"
+        >
+          <span className=" font-bold text-black lg:text-base text-xs">TRY NOW</span>
           <ArrowRight color="black" />
         </Link>
       )}

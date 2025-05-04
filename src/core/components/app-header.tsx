@@ -40,7 +40,7 @@ export default function AppHeader() {
         isScrolled ? 'border-b-border shadow-md' : 'border-b-transparent'
       )}
     >
-      <div className="flex items-center justify-around max-w-7xl mx-auto">
+      <div className="flex items-center justify-around w-screen lg:max-w-7xl mx-auto">
         <div>
           <Link href="/">
             <Image src="/images/logo.png" alt="Logo" width={40} height={40} />

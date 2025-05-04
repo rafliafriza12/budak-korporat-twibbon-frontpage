@@ -392,12 +392,12 @@ const GlowingNeonLines: React.FC = () => {
 
         {/* Output Line at the bottom */}
         <g className="mt-2">
-          <path
+          {/* <path
             d="M843.463 600L245.316 604.143L0.633077 603.365"
             stroke="url(#output_gradient)"
             strokeWidth="1.2"
             style={{ opacity: 0.8 }}
-          />
+          /> */}
           <g>
             <path
               d="M843.463 600L245.316 604.143L0.633077 603.365"
