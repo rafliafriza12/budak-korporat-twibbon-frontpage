@@ -87,7 +87,7 @@ const CollectionsSection: React.FC = () => {
           </Link>
         </div>
         <div className=" w-full justify-center items-center relative z-[-4] lg:z-0 group ">
-          <div className="w-full rotate-x-[180deg] absolute z-[-5] scale-[2] top-[-330px] left-[30px] lg:left-0 lg:top-[100px] block h-[400px] lg:h-auto">
+          <div className="w-full rotate-x-[180deg] absolute z-[-5] scale-[2] top-[-330px] left-[30px] lg:left-0 lg:top-[100px] hidden lg:block h-[400px] lg:h-auto">
             <GlowingNeonLines />
           </div>
           <div className="hidden lg:block">
