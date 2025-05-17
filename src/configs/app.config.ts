@@ -24,7 +24,7 @@ interface AppConfig {
 }
 
 export const appConfig: AppConfig = {
-  name: 'Bodak Korporat',
+  name: 'Budak Korporat',
   description: 'Build your Twibbon with Budak Korporat',
   logo: '/images/logo.png',
   items: [

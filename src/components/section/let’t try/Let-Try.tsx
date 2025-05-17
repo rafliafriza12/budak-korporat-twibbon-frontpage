@@ -7,11 +7,11 @@ const LetTry: React.FC = () => {
         <div className="flex justify-start items-center w-full">
           <div className="bg-white w-full h-[30vh] lg:h-[50vh]"></div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center w-full lg:pl-8">
           <div className="flex-col flex w-full">
             <div className="mb-5 flex-col">
               <h1 className="font-semibold text-[3rem]">Let’s Try Our Attractive Piece</h1>
-              <p className="font-light w-full lg:w-[40vw] text-[1rem]">
+              <p className="font-light w-full text-[1rem]">
                 You can make sales and purchases of cards here. have the opportunity to offer
                 affordable prices you can make contact with buyers
               </p>

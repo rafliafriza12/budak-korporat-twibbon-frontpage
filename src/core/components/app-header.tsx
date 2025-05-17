@@ -14,11 +14,11 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import UserDropdown from './user.dropdown';
 import LanguageDropdown from './language.dropdown';
-import NotificationDropdown from './notification.dropdown';
-import ThemeToggle from './theme-toggle';
-
+import MenuDropdown from './menu.dropdown';
+import { useIsMobile } from '@/hooks/use-mobile';
 export default function AppHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,17 +36,22 @@ export default function AppHeader() {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm p-6 border-b transition-all duration-200',
+        'fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm p-6 border-b transition-all duration-200 w-screen',
         isScrolled ? 'border-b-border shadow-md' : 'border-b-transparent'
       )}
     >
-      <div className="flex items-center justify-around w-screen lg:max-w-7xl mx-auto">
+      <div className="flex items-center justify-between w-full lg:max-w-7xl mx-auto">
         <div>
           <Link href="/">
-            <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={isMobile ? 35 : 40}
+              height={isMobile ? 35 : 40}
+            />
           </Link>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           {/* Company Logo */}
 
           <NavigationMenu>
@@ -65,6 +70,9 @@ export default function AppHeader() {
         <div className="flex items-center gap-4">
           {/* <ThemeToggle /> */}
           <LanguageDropdown />
+          <button className="block lg:hidden ">
+            <MenuDropdown />
+          </button>
           {/* <NotificationDropdown />
           <UserDropdown /> */}
         </div>

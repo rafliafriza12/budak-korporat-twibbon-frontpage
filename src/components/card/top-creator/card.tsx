@@ -8,7 +8,7 @@ const CardComponentTopCreator: React.FC<CardConfigProps> = ({ data }) => {
 
   return (
     <main
-      className={`flex border-2 w-[80vw] h-[45vh] lg:h-auto lg:w-[35vh] bg-card flex-col items-center gap-[50px]  p-5`}
+      className={`flex border-2 w-[80vw] h-[450px] lg:h-auto lg:w-[35vh] bg-card flex-col items-center gap-[50px]  p-5`}
     >
       <div className="bg-[#D9D9D9] w-[100%] h-[300px] relative z-0 p-5 flex justify-center">
         <div className="bg-[#D9D9D9]  w-20 h-20 scale-1.5 border-2  absolute -bottom-[40px] rounded-full border-black"></div>
