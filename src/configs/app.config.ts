@@ -29,9 +29,9 @@ export const appConfig: AppConfig = {
   logo: '/images/logo.png',
   items: [
     {
-      addres: 'Number 3891 Jhosep Marlong, Lambhuk ujong 62639, Indonesia Country',
+      addres: 'Number 5A. Jalan Prada Utama, Syiah Kuala, Banda Aceh',
       email: 'budakkorprat@gmail.com',
-      phone: '08123456789',
+      phone: '083197475917',
     },
   ],
   company: [

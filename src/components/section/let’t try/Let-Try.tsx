@@ -1,11 +1,19 @@
 import { MoveRight } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 const LetTry: React.FC = () => {
   return (
     <div className="min-h-screen w-screen">
       <div className=" w-full px-[10vw] grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 gap-4">
         <div className="flex justify-start items-center w-full">
-          <div className="bg-white w-full h-[30vh] lg:h-[50vh]"></div>
+          <div className=" w-full h-[30vh] lg:h-[50vh] overflow-hidden relative">
+            <Image
+              src={'/images/budakkorporat.png'}
+              alt="Budak Korporat"
+              fill
+              className=" w-full h-full object-cover"
+            />
+          </div>
         </div>
         <div className="flex justify-center items-center w-full lg:pl-8">
           <div className="flex-col flex w-full">
@@ -20,7 +28,7 @@ const LetTry: React.FC = () => {
               <div className="mb-5 flex-col">
                 <div className="flex justify-between mb-5 border-b-2 items-center">
                   <h1 className="font-bold text-lg lg:text-[2rem]">
-                    How to Order Personal Twibbon{' '}
+                    How to Order Personal Design{' '}
                   </h1>
                   <Link href="/">
                     <MoveRight />
@@ -29,7 +37,7 @@ const LetTry: React.FC = () => {
 
                 <div className="flex justify-between mt-5 items-center border-b-2 ">
                   <h1 className="font-bold text-lg lg:text-[2rem]">
-                    How to Order Personal Twibbon{' '}
+                    How to Order Personal Design{' '}
                   </h1>
                   <Link href="/">
                     <MoveRight />

@@ -22,7 +22,14 @@ const CardCollection: React.FC<CardCollectionProps> = ({ width, height, imgURL, 
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image src={testImage} alt="Testing" className="object-cover w-full h-full absolute z-[-1]" />
+      <Image
+        src={imgURL}
+        alt="Testing"
+        fill
+        className={`object-cover w-full h-full absolute z-[-2] duration-300 ${isHovered ? 'grayscale-0' : 'grayscale-[1]'}`}
+      />
+      <div className="w-full h-full absolute z-[-1]  bg-black/10"></div>
+
       {isHovered && (
         <Link
           href={href}

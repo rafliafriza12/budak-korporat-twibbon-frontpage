@@ -6,7 +6,16 @@
 }
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Nasalization';
+  src: url('/fonts/nasalization/Nasalization.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
+  --font-nasalization: 'Nasalization', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

@@ -17,9 +17,9 @@ export default function ContainerHome() {
       <main className={` bg-[${themeConfig[theme].primary.background}]`}>
         <HeroSection />
         <CollectionsSection />
-        <AttractiveTwibbon />
-        <div className="flex flex-col items-center justify-center h-full">
-          <TopCreator />
+        {/* <AttractiveTwibbon /> */}
+        <div className="flex flex-col items-center justify-center h-full relative z-[1]">
+          {/* <TopCreator /> */}
           <LetTry />
           <Mail />
         </div>

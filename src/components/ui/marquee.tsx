@@ -15,7 +15,10 @@ export const MarqueeElementText: React.FC<MarqueeElementTextProps> = ({ text }) 
     <Marquee direction="right" className=" flex overflow-hidden">
       {[1, 2, 3, 4, 5, 6, 7].map((data: number, index: number) => {
         return (
-          <h1 key={index} className="text-black font-semibold text-2xl lg:text-5xl mr-10">
+          <h1
+            key={index}
+            className="text-black font-nasalization font-regular text-2xl lg:text-5xl mr-10"
+          >
             {text}
           </h1>
         );
@@ -26,7 +29,7 @@ export const MarqueeElementText: React.FC<MarqueeElementTextProps> = ({ text }) 
 
 export const MarqueeElementCollection: React.FC<MarqueeElementCollectionProps> = ({ datas }) => {
   return (
-    <Marquee direction="left" className=" flex">
+    <Marquee direction="left" className=" flex ">
       {datas.map((data: any, index: number) => {
         return (
           <div key={index} className=" mr-10">

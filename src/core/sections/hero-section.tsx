@@ -25,11 +25,11 @@ const HeroSection: React.FC = () => {
         <Image src={appConfig.logo} alt="Budak Korporat" width={80} height={80} />
       </div>
 
-      <div className=" flex flex-col items-end text-5xl lg:text-8xl font-bold lg:mr-[13vw] gap-2">
-        <h1 className="">SELECT YOUR</h1>
+      <div className=" flex flex-col items-end text-5xl lg:text-8xl font-regular lg:mr-[13vw] gap-2">
+        <h1 className="font-nasalization">BUDAK</h1>
         <div className=" flex items-center gap-6 mr-[2vw]">
           <h1 className=" font-extralight tracking-[-6px] lg:tracking-[-15px]">----</h1>
-          <h1>TWIBBON</h1>
+          <h1 className="font-nasalization">KORPORAT</h1>
         </div>
       </div>
 
@@ -39,16 +39,16 @@ const HeroSection: React.FC = () => {
           subscription
         </p>
 
-        <Link
+        {/* <Link
           href={'#'}
           className={`${theme === 'dark' ? 'text-[#FF0000]' : 'text-foreground'} font-bold text-xs lg:text-base`}
         >
           Learn More
-        </Link>
+        </Link> */}
       </div>
 
       <div className=" w-[110vw] py-8 lg:py-14 bg-[#FF0000] -rotate-5 overflow-hidden">
-        <MarqueeElementText text="SELECT YOUR FAVORITE TWIBBON" />
+        <MarqueeElementText text="SELECT YOUR FAVORITE DESIGN" />
       </div>
     </div>
   );
